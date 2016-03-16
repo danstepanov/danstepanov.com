@@ -128,6 +128,7 @@ blockquote p {color:#797979;}
 .footer {
   font-size: 90%;
   color: #666;
+  background-color: #F5F5F5;
   /*border-top: 1px solid #8085C1;*/
   margin-top: 1em;
   width: 100%;
@@ -196,15 +197,9 @@ blockquote p {color:#797979;}
     -ms-transition: all .3s;
 }
 
-.footer a.rss { background: url(../img/social-icons/rss.png) left top no-repeat;}
-.footer a.aboutme { background: url(../img/social-icons/aboutme.png) left top no-repeat; }
-.footer a.apple { background: url(../img/social-icons/apple.png) left top no-repeat; }
 .footer a.email { background: url(../img/social-icons/email.png) left top no-repeat; }
 .footer a.github { background: url(../img/social-icons/github-alt.png) left top no-repeat; }
-.footer a.instagram { background: url(../img/social-icons/instagram.png) left top no-repeat; }
-.footer a.location { background: url(../img/social-icons/location.png) left top no-repeat; }
 .footer a.linkedin { background: url(../img/social-icons/linkedin-alt.png) left top no-repeat; }
-.footer a.pinterest { background: url(../img/social-icons/pinterest.png) left top no-repeat; }
 .footer a.twitter { background: url(../img/social-icons/twitter.png) left top no-repeat; }
 
 .footer a:hover { background-position: left -34px; }
