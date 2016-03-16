@@ -128,7 +128,7 @@ blockquote p {color:#797979;}
 .footer {
   font-size: 90%;
   color: #666;
-  background-color: #F5F5F5;
+  /*background-color: #F5F5F5;*/
   /*border-top: 1px solid #8085C1;*/
   margin-top: 1em;
   width: 100%;
