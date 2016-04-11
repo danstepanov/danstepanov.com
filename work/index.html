@@ -10,6 +10,12 @@
     <link id="favicon" rel="icon" type="image/png" sizes="57x52" href="/favicon.png">
   </head>
   <body>
+    <script type="text/javascript">
+      mixpanel.track(
+        "Open Page",
+        {"page": "Work"}
+      );
+    </script>
     <div class="site">
       <div class="header">
         <a href="/">Home</a>
@@ -17,6 +23,11 @@
         <a style="color:black">Work</a>
         <a href="https://medium.com/@danstepanov">Blog</a>
       </div>
+      <script type="text/javascript">
+        mixpanel.track_links("#nav a", "click nav link", {
+          "referrer": document.referrer
+        });
+      </script>
       <div class="home">
 		    <h2>My Work</h2>
         <p>

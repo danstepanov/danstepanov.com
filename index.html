@@ -10,6 +10,12 @@
     <link id="favicon" rel="icon" type="image/png" sizes="57x52" href="./favicon.png">
   </head>
   <body>
+    <script type="text/javascript">
+      mixpanel.track(
+        "Open Page",
+        {"page": "Home"}
+      );
+    </script>
     <div class="site">
       <div class="header" id="nav">
         <a style="color:black">Home</a>
