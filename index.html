@@ -10,30 +10,6 @@
     <link id="favicon" rel="icon" type="image/png" sizes="64x64" href="./favicon.png">
   </head>
   <body>
-    <!-- Start of Async Drift Code -->
-    <script>
-    !function() {
-      var t;
-      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-      t.factory = function(e) {
-        return function() {
-          var n;
-          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-        };
-      }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-      }), t.load = function(t) {
-        var e, n, o, i;
-        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-      });
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('39u97m8786gs');
-    </script>
-    <!-- End of Async Drift Code -->
     <script type="text/javascript">
       mixpanel.track(
         "Open Page",
@@ -56,25 +32,35 @@
 
         <h1>Dan Stepanov</h1>
 
-        <h2>I'm a Mobile Developer</h2>
+        <h2>I build products that people love to use</h2>
 
           <p>
-            Hi! I'm a mobile developer living in Palo Alto, California. I co-host the <a href="http://www.meetup.com/Palo-Alto-iOS-Study-Group/" target="_blank">Palo Alto iOS Weekly Study Group</a> and I love attending hackathons. I spend my free time hiking, biking, and building apps that solve issues spanning various fields such as education and geopolitics. If you're curious, <a href="/about">here's more about me</a>.
-          </p>
-
-        <h2>Work</h2>
-
-          <p>
-            I work at <a href="https://slice.capital" target="_blank">Slice Capital</a> as the Dark Lord of the Sith. Additionally, I'm a mentor at <a href="http://hacker.fund/" target="_blank">Hacker Fund</a> where I help high school students learn to code. You can check out more details on my <a href="/work">Work</a> page.
+            I'm a full stack software developer/product manager currently living in LA. The products that I build, collectively, have hundreds of thousands of users. I do mobile, web, and backend development.
           </p>
 
           <p>
-            I'm currently in the Bay Area while working on developing <a href="http://slice.capital" target="_blank">Slice Capital</a>. I'm looking forward to traveling a bit more over the next year with trips to South America and Australia.
+            Interested in chatting? <a href="mailto:danhstepanov@gmail.com">Hit me up</a>.
+          </p>
+
+        <h2>What am I up to?</h2>
+
+          <p>
+            I'm currenlty building <a href="https://slice.capital" target="_blank">Slice Capital</a>. I also work on <a href="http://hacker.fund/" target="_blank">Hacker Fund</a> where I help high school students learn to code. For more things that I've built, check out my <a href="/work">Work</a> page.
+          </p>
+
+          <p>
+            I mostly use React, React-Native, Redux, and GraphQL implementations to build amazing products. I love to travel so I'm looking forward to traveling a bit more over the next year with trips to South America and Australia.
           </p>
 
           <h3>Latest Apps</h3>
 
           <ul class="apps">
+            <li>
+              <a href="https://evolvehealth.io" rel="external nofollow" title="Evolve" target="_blank">
+                <img src="./img/app/evolve.png" alt="Evolve">
+                <span>Evolve</span>
+              </a>
+            </li>
             <li>
               <a href="http://slice.capital/" rel="external nofollow" title="Slice Capital" target="_blank">
                 <img src="./img/app/slice.png" alt="Slice Capital">
@@ -85,12 +71,6 @@
               <a href="https://itunes.apple.com/us/app/chem101-chemistry-classroom/id1128486439?mt=8" rel="external nofollow" title="101" target="_blank">
                 <img src="./img/app/101.png" alt="101">
                 <span>101</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://itunes.apple.com/us/app/id1125684467" rel="external nofollow" title="Firecat" target="_blank">
-                <img src="./img/app/firecat.png" alt="Firecat">
-                <span>Firecat</span>
               </a>
             </li>
             <li>
