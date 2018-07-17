@@ -197,10 +197,10 @@ blockquote p {color:#797979;}
     -ms-transition: all .3s;
 }
 
-.footer a.email { background: url(../img/social-icons/email.png) left top no-repeat; }
-.footer a.github { background: url(../img/social-icons/github-alt.png) left top no-repeat; }
-.footer a.linkedin { background: url(../img/social-icons/linkedin-alt.png) left top no-repeat; }
-.footer a.twitter { background: url(../img/social-icons/twitter.png) left top no-repeat; }
+.footer a.email { background: url(../img/email.png) left top no-repeat; }
+.footer a.github { background: url(../img/github-alt.png) left top no-repeat; }
+.footer a.linkedin { background: url(../img/linkedin-alt.png) left top no-repeat; }
+.footer a.twitter { background: url(../img/twitter.png) left top no-repeat; }
 
 .footer a:hover { background-position: left -34px; }
 
