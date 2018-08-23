@@ -8,4 +8,4 @@ I largely copied the website from [Ed Sancha's](http://edsancha.com) personal we
 
 ## Contact
 
-If you have any feedback, [send me an email](mailto:danhstepanov@gmail.com) or contact me on [Twitter](http://twitter.com/danstepanov).
+If you have any feedback, [send me an email](mailto:dan@danstepanov.com) or contact me on [Twitter](http://twitter.com/danstepanov).
