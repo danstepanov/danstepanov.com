@@ -1,113 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-      for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-      mixpanel.init("7491f0cbde3cb9598d8dc137df339243");
-    </script>
-    <title>Dan Stepanov</title>
-    <link href="./css/main.css" rel="stylesheet">
-    <link id="favicon" rel="icon" type="image/png" sizes="64x64" href="./favicon.png">
-    <meta property="og:image" content="/img/simple.png" />
-    <meta property="og:image" content="http://danstepanov.com/img/simple.png" />
-    <meta property="og:image:secure_url" content="https://danstepanov.com/img/simple.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="627" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="danstepanov.com" />
-    <meta property="og:title" content="Dan Stepanov" />
-    <meta property="og:description" content="My crime is curiosity." />
-  </head>
-  <body>
-    <script type="text/javascript">
-      mixpanel.track(
-        "Open Page",
-        {"page": "Home"}
-      );
-    </script>
-    <div class="site">
-      <div class="header" id="nav">
-        <a style="color:black">Home</a>
-        <a href="/work">Work</a>
-        <a href="/about">About</a>
-        <a href="/resume">Resume</a>
-        <a href="https://medium.com/@danstepanov" target="_blank">Blog</a>
-      </div>
-      <script type="text/javascript">
-        mixpanel.track_links("#nav a", "click nav link", {
-          "referrer": document.referrer
-        });
-      </script>
-      <div "home">
+		<title>Dan Stepanov</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-171603163-1', 'auto');
+	ga('send', 'pageview');
+	
+	</script>
+	
+	</head>
+	<body>
 
-        <h1>Dan Stepanov</h1>
-
-        <h2>I build products that people love to use</h2>
-
-          <p>
-            I'm a detail-oriented hummus enthusiast with a passion for product development. Over the last 10 years, I've gone from chemical engineer to software engineer to technical product manager and I'm currently spending my time alternating between New York and Los Angeles. To date, the products that I've built have hundreds of thousands of users and operate in various industries including education, politics, professional sports, and finance.
-          </p>
-
-          <p>
-            
-          </p>
-
-          <p>
-            Interested in chatting? <a href="mailto:dan@danstepanov.com">Hit me up</a>.
-          </p>
-
-        <h2>What am I up to?</h2>
-
-          <p>
-            I'm currently advising PlayCall on their <a href="https://fantasylive.app/" target="_blank">Fantasy Live</a> experience. I have a passion for education and ensuring the civil liberties of people all over the world. Subsequently, I spend my free time advising and volunteering with <a href="http://hacker.fund/" target="_blank">Hacker Fund</a> where I help disadvantaged high school students learn to code. For more things that I've worked on, check out my <a href="/work">Work</a> page.
-          </p>
-
-          <p>
-            I typically use React, React-Native, Redux, Apollo, GraphQL, and AWS to build products and Zenhub to manage the engineering process. I've been spending more time on my webscraping skills lately via Selenium and Python and will likely post some relevant projects shortly.
-          </p>
-
-          <p>
-            A lot of my free time is also spent reading. Right now, I'm reading "Mastering the Market Cycle" by Howard Marks, "Ghost in the Wires" by Kevin Mitnick, and I just wrapped up "I Will Teach You to Be Rich" by Ramit Sethi. Let me know if you have any recommendations, especially on the topic of finance.
-          </p>
-
-          <h3>Latest Apps</h3>
-
-          <ul class="apps">
-            <li>
-              <a href="https://testflight.apple.com/join/iFTr10oN" rel="external nofollow" title="Fantasy Live" target="_blank">
-                <img src="./img/app/fantasylive.png" alt="Fantasy Live">
-                <span>Fantasy Live</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://itunes.apple.com/us/app/evolve-health-made-simple/id1208407960?mt=8" rel="external nofollow" title="Evolve" target="_blank">
-                <img src="./img/app/evolve.png" alt="Evolve">
-                <span>Evolve</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://slice.capital/" rel="external nofollow" title="Slice Capital" target="_blank">
-                <img src="./img/app/slice.png" alt="Slice Capital">
-                <span>Slice Capital</span>
-              </a>
-            </li>
-            
-            <li>
-              <a href="/work" title="Show more apps">
-                <img src="./img/app/Unknown.svg" alt="More apps">
-                <span>More apps</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer">
-          <a class="email" href="mailto:dan@danstepanov.com"></a>
-          <a class="github" href="https://github.com/danstepanov" target="_blank"></a>
-          <a class="twitter" href="https://twitter.com/danstepanov" target="_blank"></a>
-          <a class="linkedin" href="https://linkedin.com/in/danstepanov" target="_blank"></a>
-        </div>
-      </div>
-  </body>
+	<p style="padding-top:15px;padding-left:15px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    Oh hai,
+    <br>
+    <br>
+      I spend my time creating cashier-free restaurants @ <a href="https://marblekiosk.com/">Marble</a>,
+      <br>
+      <br>
+      supplying face shields to hospitals @ <a href="https://covid.crashspace.org/">LA Makers United</a>,
+      <br>
+      <br>
+      and teaching underpriveleged kids to code @ <a href="https://hacker.fund/">Hacker Fund</a>.
+      <br>
+      <br>
+      <br>
+      <br>
+      Previously, I worked with the SEC and FINRA to make startup investment available to your average Joe @ <a href="https://slice.capital/">Slice Capital</a>(acquired),
+      <br>
+      <br>
+      taught kids how to code without getting them into life-long debt @ <a href="https://makeschool.com">Make School</a>,
+      <br>
+      <br>
+      and acquired copious amounts of debt while mixing chemicals at Penn State.
+  </p>
+  <br>
+  <p style="padding-top:15px;padding-left:15px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">I say things on <a href="https://twitter.com/danstepanov/">Twitter</a>,
+    <br>
+    <br>
+    and occasionally visit <a href="https://www.linkedin.com/in/danstepanov/">LinkedIn</a>.
+  </p>
+	</body>	
 </html>
