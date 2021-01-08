@@ -11,6 +11,21 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <link rel="shortcut icon" href="/static/favicon.png" />
+                    <meta charSet="utf-8" />
+                    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                    <meta property="og:image" content="/static/simple.png" key="ogimageurl" />
+                    <meta property="og:image:secure_url" content="/static/simple.png" key="ogimagesecureurl" />
+                    <meta property="og:image:type" content="image/png" key="ogimagetype" />
+                    <meta property="og:image:width" content="1200" key="ogiamgewidth" />
+                    <meta property="og:image:height" content="627" key="ogimageheight" />
+                    <meta property="og:type" content="website" key="ogtype" />
+                    <meta property="og:url" content="danstepanov.com" key="ogurl" />
+                    <meta property="og:title" content="Dan Stepanov" key="ogtitle" />
+                    <meta property="og:description" content="My crime is curiosity." key="ogdescription" />
+                    <meta name="twitter:card" content="summary" key="twcard" />
+                    <meta name="twitter:creator" content="@danstepanov" key="twhandle" />
+                    <title>Dan Stepanov</title>
+
                 </Head>
                 <body>
                     <Main />
