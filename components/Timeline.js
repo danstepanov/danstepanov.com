@@ -38,6 +38,9 @@ const FullTimeline = () => (
         <Divider />
         <Year>2018</Year>
         <ul>
+            <Step title="Product of the Day on Product Hunt 🚀">
+                Upon launching Slice Capital on Product Hunt, we got over 1k upvotes!
+            </Step>
             <Step title="Moved to LA 🏝️" />
         </ul>
         <Divider />
