@@ -1,18 +1,18 @@
 import { useState } from 'react'
 
 const Divider = () => (
-    <div className="border border-gray-200 w-full my-8" />
+    <div className="border border-gray-200 w-full my-8 dark:border-gray-600" />
 )
 
 const Year = ({ children }) => (
-    <h3 className="text-lg md:text-lg font-bold mb-4 tracking-tight text-gray-900">
+    <h3 className="text-lg md:text-lg font-bold mb-4 tracking-tight text-gray-900 dark:text-gray-100">
         {children}
     </h3>
 )
 
 const Step = ({ title, children }) => (
     <li className="mb-4 ml-2">
-        <div className="flex items-center mb-2 text-green-700">
+        <div className="flex items-center mb-2 text-green-700 dark:text-green-300">
             <span className="sr-only">Check</span>
             <svg className="h4 w-4 mr-2" viewBox="0 0 24 24">
                 <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -20,9 +20,9 @@ const Step = ({ title, children }) => (
                     <path d="M22 4L12 14.01l-3-3" />
                 </g>
             </svg>
-            <p className="font-medium text-gray-900">{title}</p>
+            <p className="font-medium text-gray-900 dark:text-gray-100">{title}</p>
         </div>
-        <p className="text-gray-700 ml-6">{children}</p>
+        <p className="text-gray-700 ml-6 dark:text-gray-400">{children}</p>
     </li>
 )
 
@@ -92,7 +92,7 @@ const Timeline = () => {
 
     return (
         <>
-            <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black">Timeline</h3>
+            <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">Timeline</h3>
             <Year>2021</Year>
             <ul>
                 <Step title="Launched New Website 🎉">
@@ -118,7 +118,7 @@ const Timeline = () => {
             {isShowingFullTimeline ? (
                 <FullTimeline />
             ) : (
-                    <button type="button" className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900" onClick={() => showFullTimeline(true)}>
+                    <button type="button" className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100" onClick={() => showFullTimeline(true)}>
                         See More
                         <svg className="h-4 w-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
