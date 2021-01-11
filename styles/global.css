@@ -11,7 +11,7 @@ html {
 pre::-webkit-scrollbar {
     background: transparent;
     display: none;
-    width;
+    width: 0px;
 }
 
 pre {
