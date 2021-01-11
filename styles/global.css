@@ -4,8 +4,20 @@
 
 html {
     min-width: 360px;
+    overflow: scroll;
     scroll-behavior: smooth;
 }
+
+pre::-webkit-scrollbar {
+    background: transparent;
+    display: none;
+    width: 0;
+}
+
+pre {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 
 #__next {
     display: flex;

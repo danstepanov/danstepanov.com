@@ -27,7 +27,7 @@ class MyDocument extends Document {
                     <title>Dan Stepanov</title>
 
                 </Head>
-                <body>
+                <body className="bg-white dark:bg-black text-white dark:text-black">
                     <Main />
                     <NextScript />
                 </body>
