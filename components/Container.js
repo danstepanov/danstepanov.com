@@ -11,7 +11,7 @@ export default function Container({ children }) {
 
     return (
         <div className="bg-white dark:bg-black">
-            <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
+            <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto bg-opacity-60">
                 <button aria-label="Toggle Dark Mode" type="button" className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
                     {mounted && (
                         <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" className="h-4 w-4 text-gray-800 dark:text-gray-200">
