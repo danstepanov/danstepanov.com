@@ -4,7 +4,6 @@
 
 html {
     min-width: 360px;
-    overflow: scroll;
     scroll-behavior: smooth;
 }
 
