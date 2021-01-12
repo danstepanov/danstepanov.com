@@ -8,13 +8,13 @@ html {
     scroll-behavior: smooth;
 }
 
-pre::-webkit-scrollbar {
+::-webkit-scrollbar {
     background: transparent;
     display: none;
     width: 0px;
 }
 
-pre {
+* {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }

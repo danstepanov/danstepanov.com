@@ -12,7 +12,6 @@ class MyDocument extends Document {
                 <Head>
                     <link rel="shortcut icon" href="/static/favicon.png" />
                     <meta charSet="utf-8" />
-                    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                     <meta property="og:image" content="/static/simple.png" key="ogimageurl" />
                     <meta property="og:image:secure_url" content="/static/simple.png" key="ogimagesecureurl" />
                     <meta property="og:image:type" content="image/png" key="ogimagetype" />
