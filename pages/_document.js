@@ -24,8 +24,6 @@ class MyDocument extends Document {
                     <meta property="og:description" content="My crime is curiosity." key="ogdescription" />
                     <meta name="twitter:card" content="summary" key="twcard" />
                     <meta name="twitter:creator" content="@danstepanov" key="twhandle" />
-                    <title>Dan Stepanov</title>
-
                 </Head>
                 <body className="bg-white dark:bg-black text-white dark:text-black">
                     <Main />
