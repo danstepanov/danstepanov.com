@@ -38,6 +38,19 @@ const ProjectCard = ({ title, description, href, icon }) => {
                         </svg>
                     </div>
                 )}
+                {icon == "prophone" && (
+                    <div className="h-8 w-8 ml-2 mr-4">
+                        <span className="sr-only">ProPhone</span>
+                        <svg className="h-8 w-8 min-w-lg text-gray-900 dark:text-gray-100" viewBox="0 -5 51 51" fill="none">
+                            <g fill="none" fill-rule="evenodd">
+                                <g>
+                                    <path d="M4,7.6185562 C4,7.27695854 4.27053357,7 4.60420675,7 L20.3952258,7 C20.819681,7 21.111815,7.43631408 20.9587996,7.84162303 L9.34232058,38.6045106 C9.25229377,38.8428867 9.02835965,39 8.77874673,39 L4.60420675,39 C4.27053357,39 4,38.7231188 4,38.3814438 L4,7.6185562 Z" fill="currentColor"></path>
+                                    <path d="M35,31.3814438 C35,31.7230415 34.7294664,32 34.3957932,32 L18.6047742,32 C18.180319,32 17.888185,31.5636859 18.0412004,31.158377 L29.6576794,0.395489372 C29.7477062,0.157190595 29.9716404,0 30.2212533,0 L34.3957932,0 C34.7294664,0 35,0.27695854 35,0.618556203 L35,31.3814438 Z" fill="currentColor"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                )}
                 <div>
                     <h4 className="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100">{title}</h4>
                     <p className="leading-5 text-gray-700 dark:text-gray-300">{description}</p>

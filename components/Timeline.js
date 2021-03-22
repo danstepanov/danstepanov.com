@@ -98,6 +98,12 @@ const Timeline = () => {
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">Timeline</h3>
             <Year>2021</Year>
             <ul>
+                <Step title="Graduated Y-Combinator W21 and launched ProPhone 🚀">
+                    After 12 weeks of the hardest work I've ever done, we launched a platform that solves the massive communication problem faced by home-service professionals. 
+                </Step>
+                <Step title="Joined Y-Combinator W21 🟧">
+                    Fulfilled a dream I had since college by being accepted into Y-Combinator! Such an incredibly rewarding experience.
+                </Step>
                 <Step title="Launched New Website 🎉">
                     New website, who dis? This website is built using NextJS, TailwindCSS, and is deployed via Vercel. I'm looking forward to adding a lot more to it over the coming weeks!
                 </Step>
