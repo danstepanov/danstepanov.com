@@ -46,7 +46,7 @@ const FullTimeline = () => (
         <Divider />
         <Year>2017</Year>
         <ul>
-            <Step title="Joined Slice Capital 🍊">
+            <Step title="Started Slice Capital 🍊">
                 Recent regulations made it possible for regular people to invest in startups and I set out to make that possible. This was my first time building out an entire platform from scratch. I used React, Apollo, GraphQL, Serverless, and Postgres.
             </Step>
         </ul>
@@ -67,12 +67,31 @@ const FullTimeline = () => (
             <Step title="Graduated from Penn State 🎓">
                 Got my chemical engineering degree and my student debt, I was now a full-fledged adult. 
             </Step>
+            <Step title="Won the Evernote API Prize and placed top 10 at MHacks 3 (University of Michigan) 🎊" />
+        </ul>
+        <Divider />
+        <Year>2014</Year>
+        <ul>
+            <Step title="Won the Whisper API Prize at Hacktech (Caltech) 🎉" />
+            <Step title="Won the Top Cash Prize at MHacks 2 (University of Michigan) 🤯">
+                MHacks 2 was my first hackathon and my first dive back into coding since highschool. Hackathons were an eye-opening experience for me. For the first time in my life, it seemed like the adults were coming to the kids for answers. I was inspired by the notion that regardless of your age, gender, personal beliefs, etc, if you were good at programming, people listened. It seemed that for every hour I put into developing this skill, it propelled me forward. <a style={{ color: 'blue' }} href="https://medium.com/this-side-of-park/five-months-of-innovation-dbc49f52dad0">I was hooked</a>. RIP to my GPA.
+            </Step>
+            <Step title="Raised $5K for my First Company 💰">
+                I spent a summer in Seattle working with a community of angel investors called ZINO Society. After pitching my college startup idea (Amplified) around, I was able to land a $5K angel investment from 2 of the members. This may not seem like much but, to me, it was world changing. That startup eventually failed but the lessons I learned in both that summer and in running Amplified became the foundation of my entrepreneurial journey. A massive thank you to Maureen and Robert O'Hara for taking a chance on me, it meant the world.    
+            </Step>
         </ul>
         <Divider />
         <Year>2008</Year>
         <ul>
             <Step title="Built my First Game 🎮">
                 I wasn't aware of it at the time but I used BASIC to build a Family Guy themed text-based adventure game on my TI-83 Plus calculator. Afterwards, a classmate deleted 30 lines of code and I stopped coding until college.  
+            </Step>
+        </ul>
+        <Divider />
+        <Year>2006</Year>
+        <ul>
+            <Step title="Early Tumor Detection Research at the University of Pennsylvania 🔬">
+                The key to curing cancer is early detection. When it comes to detecting early tumor development, a trademark indicator is low oxygen levels. I got the chance to work alongside <a style={{ color: 'blue' }} href="https://www.chem.upenn.edu/profile/sergei-vinogradov">Dr. Sergei Vinogradov</a> and his team of brilliant researchers at the Stellar Chance Labs to 3D map oxygen distribution throughout the body based on <a style={{ color: 'blue' }} href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2440920/">his work with phosphorescence quenching</a>. I am incredibly thankful to have had this opportunity.   
             </Step>
         </ul>
         <Divider />
