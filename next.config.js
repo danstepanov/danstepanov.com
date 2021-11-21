@@ -17,6 +17,11 @@ module.exports = {
                 source: '/job',
                 destination: 'https://www.notion.so/Dan-s-Ideal-Job-8ff4e381a05e49e293ded913e213017b',
                 permanent: true
+            },
+            {
+                source: '/resume',
+                destination: 'https://drive.google.com/file/d/1buW1HhZNYH_oCLu-MTRBPlC0M3N3U9_h/view?usp=sharing',
+                permanent: true
             }
         ]
     }
