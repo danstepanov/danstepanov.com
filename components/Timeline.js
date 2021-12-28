@@ -117,6 +117,9 @@ const Timeline = () => {
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">Timeline</h3>
             <Year>2021</Year>
             <ul>
+                <Step title="Started working on an electric car ⚡">
+                    After putting everything I had into ProPhone, I found myself working with some amazing engineers on a self-driving electric car for the LA Auto Show. It felt amazing to hear people say it was the most innovative thing at the car show and we're now working to bring it into production.
+                </Step>
                 <Step title="Graduated Y-Combinator W21 and launched ProPhone 🚀">
                     After 12 weeks of the hardest work I've ever done, we launched a platform that solves the massive communication problem faced by home-service professionals. 
                 </Step>
