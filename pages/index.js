@@ -13,7 +13,7 @@ export default function Home() {
         <a className="text-blue-600" href="/connect">Let's chat</a>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black pt-8 dark:text-white">Projects</h3>
         <ProjectCard title="Sondors EV" description="A state of the art electric self- and remote-driving vehicle that is affordable, environmentally friendly, and built for the sharing economy." href="https://www.sondorsx.com/" icon="sondors" />
-        <ProjectCard title="ProPhone (YC W21)" description="ProPhone makes it easier to grow your business and spend more time in the field not in the office." href="https://www.prophone.com/" icon="prophone" />
+        <ProjectCard title="ProPhone (YC W21)" description="ProPhone makes it easier to grow your business and spend more time in the field, rather than the office." href="https://www.prophone.com/" icon="prophone" />
         <ProjectCard title="Marble (YC S19)" description="Cashier-free checkout at restaurants via elegant kiosks that allow thematic customization." href="https://vimeo.com/471041260" icon="marble" />
         <ProjectCard title="CRASH Covid" description="A distributed network of people with 3D printers working to provide PPE to hospitals in the greater LA area." href="https://covid.crashspace.org/" icon="crashCovid" />
         <ProjectCard title="Slice Capital" description="SEC and FINRA-approved funding platform providing startup investment to the masses." href="https://pitchbook.com/profiles/company/121401-01#overview" icon="slice" />
