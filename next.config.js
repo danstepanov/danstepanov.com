@@ -1,6 +1,9 @@
 const { redirect } = require("next/dist/next-server/server/api-utils");
 
 module.exports = {
+    images: {
+        domains: ['seeklogo.com', 'res.cloudinary.com'],
+      },
     async redirects() {
         return [
             {
