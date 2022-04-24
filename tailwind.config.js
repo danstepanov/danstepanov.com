@@ -2,7 +2,21 @@ module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: 'class',
   theme: {
-    extend: {},
+    backgroundSize: {
+      '400%': '400%'
+    },
+    extend: {
+      keyframes: {
+        'move-bg': {
+          to: {
+            backgroundPosition: '400% 0'
+          }
+        }
+      },
+      animation: {
+        'move-bg': 'move-bg 16s infinite linear'
+      }
+    },
   },
   variants: {
     extend: {},
