@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Container>
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <h1 className="animate-move-bg bg-gradient-to-r from-indigo-500 via-pink-500 to-indigo-500 bg-400% bg-clip-text text-5xl font-bold text-transparent">Oh hai, I'm Dan</h1>
+        <h1 className="animate-move-bg bg-gradient-to-r from-indigo-500 via-pink-500 to-indigo-500 bg-400% bg-clip-text md:text-5xl text-4xl font-bold text-transparent">Oh hai, I'm Dan</h1>
         <div className="flex flex-row flex-wrap mt-4">
           <p className="text-black dark:text-white">I'm exploring new projects, particularly in biotech and longevity&nbsp;</p>
         </div>
