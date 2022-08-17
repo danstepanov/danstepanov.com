@@ -10,7 +10,7 @@ export default function Home() {
         <div className="flex flex-row flex-wrap mt-4">
           <p className="text-black dark:text-white">I'm exploring new projects, particularly in biotech and longevity&nbsp;</p>
         </div>
-        <a className="text-blue-600" href="/connect">Let's chat</a>
+        <a className="text-blue-600" href="https://twitter.com/danstepanov">Let's chat</a>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black pt-8 dark:text-white">Projects</h3>
         <ProjectCard title="Expo" description="Make any app. Run it everywhere. Build one project that runs natively on all your users' devices." href="https://www.expo.dev/" icon="expo" />
         <ProjectCard title="Sondors EV" description="An electric self- and remote-driving vehicle that is aimed at being affordable for the average person." href="https://www.sondorsx.com/" icon="sondors" />
