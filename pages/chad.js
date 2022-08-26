@@ -7,7 +7,7 @@ export default function Chad() {
                 <p className="text-black dark:text-white">Internet historian, when are you going to upload a new main channel video? It's been like 4 months...</p>
                 <br></br>
                 <p className="text-black dark:text-white">Sincerely,</p>
-                <p className="text-black dark:text-white">The community</p>
+                <p className="text-black dark:text-white">The audience</p>
             </div>
         </Container>
     )
