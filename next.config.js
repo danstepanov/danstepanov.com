@@ -1,4 +1,12 @@
 module.exports = {
+    async rewrites() {
+        return [
+            {
+              source: '/resume',
+              destination: '/resume.pdf',
+            },
+          ]
+    },
     async redirects() {
         return [
             {
