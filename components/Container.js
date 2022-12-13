@@ -9,6 +9,10 @@ export default function Container({ children }) {
 
     useEffect(() => setMounted(true), [])
 
+    if (!mounted) {
+        return null
+    }
+    
     return (
         <div className="bg-white dark:bg-black">
             <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto bg-opacity-60">

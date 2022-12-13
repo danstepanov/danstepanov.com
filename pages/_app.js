@@ -32,6 +32,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Dan Stepanov</title>
+        <script src="https://app.embed.im/snow.js" defer></script>
       </Head>
       <Component {...pageProps} />
     </ThemeProvider>
