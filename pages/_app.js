@@ -1,32 +1,10 @@
 import 'tailwindcss/tailwind.css'
 import '@/styles/global.css'
-import { useEffect } from 'react'
-import * as Fathom from 'fathom-client'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { ThemeProvider } from 'next-themes'
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
-
-  useEffect(() => {
-    // Initialize Fathom when the app loads
-    Fathom.load('IJYKSATR', {
-      includedDomains: ['danstepanov.com'],
-    });
-
-    function onRouteChangeComplete() {
-      Fathom.trackPageview();
-    }
-    // Record a pageview when route changes
-    router.events.on('routeChangeComplete', onRouteChangeComplete);
-
-    // Unassign event listener
-    return () => {
-      router.events.off('routeChangeComplete', onRouteChangeComplete);
-    };
-  }, []);
-
   return (
     <ThemeProvider attribute="class">
       <Head>
@@ -34,6 +12,7 @@ function MyApp({ Component, pageProps }) {
         <title>Dan Stepanov</title>
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </ThemeProvider>
   )
 }
