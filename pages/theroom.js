@@ -15,7 +15,9 @@ export default function TheRoom() {
     return (
         <Container>
             <div className="flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-            <h2 className="text-2xl font-bold leading-7 text-black sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">The Room</h2>
+                <h2 className="text-2xl font-bold leading-7 text-black sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">The Room</h2>
+                <br></br>
+                <p className="text-black dark:text-white italic">June 2023</p>
                 <br></br>
                 {data.map(paragraph => (
                     <>
