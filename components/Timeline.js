@@ -29,6 +29,22 @@ const Step = ({ title, children }) => (
 const FullTimeline = () => (
     <>
         <Divider />
+        <Year>2020</Year>
+        <ul>
+            <Step title="On Deck Fellowship 🙌">
+                Honored to join this incredibly supportive community of makers. I'm regularly inspired by the people I talk to within On Deck.
+            </Step>
+            <Step title="Moved to Santa Monica 🌴">
+                Who doesn't love living right by the beach? Watching the sunset from Palisades Park is heavenly.
+            </Step>
+            <Step title="Supply LA Hospitals with Over 20k Face Shields 😷">
+                Joined Crash Space in their efforts to centralize everyone in LA with a 3D printer to mass produce face shields during a nationwide shortage. The group now uses injection moldings which is way more effective.
+            </Step>
+            <Step title="Joined Marble (YC S19) 👨‍💻">
+                Led the complete overhaul and full rewrite of Marble's user-facing application, moving it from Objective-C to React-Native and Typescript.
+            </Step>
+        </ul>
+        <Divider />
         <Year>2019</Year>
         <ul>
             <Step title="Launched Westside Story 🤗">
@@ -115,6 +131,16 @@ const Timeline = () => {
     return (
         <>
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">Timeline</h3>
+            <Year>2022</Year>
+            <ul>
+                <Step title="Started working on Expo">
+                    After using Expo for years both for myself and to teach kids, I was excited to join the team and help build the future of mobile development.
+                </Step>
+                <Step title="Created Snack for That">
+                    Over the years, I've found myself reusing a lot of the same components and patterns in my apps. I wanted to create a place where I could share these with the community and learn from others.
+                </Step>
+            </ul>
+            <Divider />
             <Year>2021</Year>
             <ul>
                 <Step title="Started working on an electric car ⚡">
@@ -128,22 +154,6 @@ const Timeline = () => {
                 </Step>
                 <Step title="Launched New Website 🎉">
                     New website, who dis? This website is built using NextJS, TailwindCSS, and is deployed via Vercel. I'm looking forward to adding a lot more to it over the coming weeks!
-                </Step>
-            </ul>
-            <Divider />
-            <Year>2020</Year>
-            <ul>
-                <Step title="On Deck Fellowship 🙌">
-                    Honored to join this incredibly supportive community of makers. I'm regularly inspired by the people I talk to within On Deck.
-                </Step>
-                <Step title="Moved to Santa Monica 🌴">
-                    Who doesn't love living right by the beach? Watching the sunset from Palisades Park is heavenly.
-                </Step>
-                <Step title="Supply LA Hospitals with Over 20k Face Shields 😷">
-                    Joined Crash Space in their efforts to centralize everyone in LA with a 3D printer to mass produce face shields during a nationwide shortage. The group now uses injection moldings which is way more effective.
-                </Step>
-                <Step title="Joined Marble (YC S19) 👨‍💻">
-                    Led the complete overhaul and full rewrite of Marble's user-facing application, moving it from Objective-C to React-Native and Typescript.
                 </Step>
             </ul>
             {isShowingFullTimeline ? (
