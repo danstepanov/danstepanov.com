@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.4",
     "@vercel/analytics": "^1.0.1",
     "autoprefixer": "^10.2.1",

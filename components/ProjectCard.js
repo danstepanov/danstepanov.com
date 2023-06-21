@@ -76,7 +76,7 @@ const ProjectCard = ({ title, description, href, icon, isNew }) => {
                         <h4 className="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100">{title}</h4>
                         {isNew && <Label />}
                     </div>
-                    <p className="leading-5 text-gray-700 dark:text-gray-300">{description}</p>
+                    <p className="leading-5 text-gray-700 dark:text-gray-500">{description}</p>
                 </div>
             </div>
         </a>

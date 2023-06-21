@@ -78,12 +78,12 @@ export default function Home() {
         <a href="/theroom" className="flex flex-row min-w-0 py-4 px-6 border-gray-200 hover:shadow border rounded dark:border-gray-800 w-full justify-between">
           <div className="flex flex-col">
             <div className="flex items-center">
-              <p className="font-semibold leading-6 text-black dark:text-white">The Room</p>
+              <p className="text-lg font-bold leading-6 text-black dark:text-white">The Room</p>
               <Label />
             </div>
-            <div className="mt-1 flex items-center gap-x-2 text-xs leading-5 text-gray-500">
+            <div className="mt-1 flex items-center gap-x-2 leading-5 text-gray-700 dark:text-gray-500">
               <p className="max-w-xs md:max-w-sm">
-                <p>In the realm of startups and ambitious endeavors, there exists a concept known as "The Room." It is an elusive group of exceptionally talented individuals working...</p>
+                <p className='line-clamp-3'>In the realm of startups and ambitious endeavors, there exists a concept known as "The Room." It is an elusive group of exceptionally talented  individuals working on something of profound significance</p>
               </p>
             </div>
           </div>
