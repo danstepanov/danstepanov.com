@@ -1,5 +1,8 @@
 import Image from 'next/image'
-const ProjectCard = ({ title, description, href, icon }) => {
+
+import Label from './Label'
+
+const ProjectCard = ({ title, description, href, icon, isNew }) => {
     return (
         <a className="mb-4 hover:shadow" href={href} target="_blank" rel="noopener norefrerrer" aria-label={title}>
             <div className="flex items-center border border-gray-200 rounded p-4 dark:border-gray-800">
@@ -69,7 +72,10 @@ const ProjectCard = ({ title, description, href, icon }) => {
                     </div>
                 )}
                 <div>
-                    <h4 className="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100">{title}</h4>
+                    <div className="flex flex-row">
+                        <h4 className="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100">{title}</h4>
+                        {isNew && <Label />}
+                    </div>
                     <p className="leading-5 text-gray-700 dark:text-gray-300">{description}</p>
                 </div>
             </div>

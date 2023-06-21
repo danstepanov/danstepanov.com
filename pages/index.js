@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import { ChevronRightIcon } from '@heroicons/react/20/solid'
+
 import Container from "../components/Container"
 import ProjectCard from "../components/ProjectCard"
 import Timeline from "../components/Timeline"
+import Label from '@/components/Label'
 
 export default function Home() {
   const [projects] = useState([
@@ -71,6 +74,23 @@ export default function Home() {
           <p className="text-black dark:text-white text-xl">I'm exploring new projects&nbsp;</p>
         </div>
         <a className="text-blue-600 text-xl" href="https://twitter.com/danstepanov">Let's chat</a>
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black pt-8 dark:text-white">Blog</h3>
+        <a href="/theroom" className="flex flex-row min-w-0 py-4 px-6 border-gray-200 hover:shadow border rounded dark:border-gray-800 w-full justify-between">
+          <div className="flex flex-col">
+            <div className="flex items-center">
+              <p className="font-semibold leading-6 text-black dark:text-white">The Room</p>
+              <Label />
+            </div>
+            <div className="mt-1 flex items-center gap-x-2 text-xs leading-5 text-gray-500">
+              <p className="max-w-xs md:max-w-sm">
+                <p>In the realm of startups and ambitious endeavors, there exists a concept known as "The Room." It is an elusive group of exceptionally talented individuals working...</p>
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <ChevronRightIcon className="h-6 w-6 flex-none text-black dark:text-white" aria-hidden="true" />
+          </div>
+        </a>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black pt-8 dark:text-white">Projects</h3>
         {projects.map(project => (
           <ProjectCard
@@ -79,6 +99,7 @@ export default function Home() {
             description={project.description}
             href={project.href}
             icon={project.icon}
+            isNew={project.title === "Create Expo Stack"}
           />
         ))}
         <Timeline />
