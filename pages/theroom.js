@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import Container from '../components/Container'
 
 export default function TheRoom() {
@@ -14,6 +16,11 @@ export default function TheRoom() {
 
     return (
         <Container>
+            <Head>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta property="og:title" content="The Room" key="ogtitle" />
+                <title>The Room</title>
+            </Head>
             <div className="flex-col justify-center items-start max-w-2xl mx-auto mb-16">
                 <h2 className="text-2xl font-bold leading-7 text-black sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">The Room</h2>
                 <br></br>
