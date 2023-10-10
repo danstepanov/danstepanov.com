@@ -12,7 +12,7 @@ export default function Home() {
       id: 0,
       title: "Create Expo Stack",
       description: "The easiest  and quickest way to initialize a typesafe React Native application with Expo.",
-      href: "https://github.com/danstepanov/create-expo-stack",
+      href: "https://expostack.dev",
       icon: "expo"
     },
     {
@@ -52,13 +52,6 @@ export default function Home() {
     },
     {
       id: 6,
-      title: "CRASH Covid",
-      description: "A distributed network of people with 3D printers working to provide PPE to hospitals in the greater LA area.",
-      href: "https://covid.crashspace.org/",
-      icon: "crashCovid"
-    },
-    {
-      id: 7,
       title: "Slice Capital",
       description: "SEC and FINRA-approved funding platform providing startup investment to the masses.",
       href: null,
