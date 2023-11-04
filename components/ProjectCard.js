@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import Label from './Label'
 
 const ProjectCard = ({ title, description, href, icon, isNew }) => {

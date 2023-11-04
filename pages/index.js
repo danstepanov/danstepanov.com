@@ -68,11 +68,26 @@ export default function Home() {
         </div>
         <a className="text-blue-600 text-xl" href="https://twitter.com/danstepanov">Let's chat</a>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black pt-8 dark:text-white">Blog</h3>
-        <a href="/theroom" className="flex flex-row min-w-0 py-4 px-6 border-gray-200 hover:shadow border rounded dark:border-gray-800 w-full justify-between">
+        <a href="/lucky" className="flex flex-row min-w-0 py-4 px-6 border-gray-200 hover:shadow border rounded dark:border-gray-800 w-full justify-between">
+          <div className="flex flex-col">
+            <div className="flex items-center">
+              <p className="text-lg font-bold leading-6 text-black dark:text-white">Lucky</p>
+              <Label />
+            </div>
+            <div className="mt-1 flex items-center gap-x-2 leading-5 text-gray-700 dark:text-gray-500">
+              <p className="max-w-xs md:max-w-sm">
+                <p className='line-clamp-3'>I was born in 1990, 2 weeks after my pregnant and 18 year old mother landed alone in the US, from the collapsing Soviet Union. At the cost of her 20s, my young mother was incredibly busy raising 2 kids</p>
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <ChevronRightIcon className="h-6 w-6 flex-none text-black dark:text-white" aria-hidden="true" />
+          </div>
+        </a>
+        <a href="/theroom" className="mt-4 flex flex-row min-w-0 py-4 px-6 border-gray-200 hover:shadow border rounded dark:border-gray-800 w-full justify-between">
           <div className="flex flex-col">
             <div className="flex items-center">
               <p className="text-lg font-bold leading-6 text-black dark:text-white">The Room</p>
-              <Label />
             </div>
             <div className="mt-1 flex items-center gap-x-2 leading-5 text-gray-700 dark:text-gray-500">
               <p className="max-w-xs md:max-w-sm">
@@ -84,6 +99,7 @@ export default function Home() {
             <ChevronRightIcon className="h-6 w-6 flex-none text-black dark:text-white" aria-hidden="true" />
           </div>
         </a>
+        
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black pt-8 dark:text-white">Projects</h3>
         {projects.map(project => (
           <ProjectCard
