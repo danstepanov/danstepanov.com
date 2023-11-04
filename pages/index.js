@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Head from 'next/head'
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
 import Container from "../components/Container"
@@ -62,21 +61,6 @@ export default function Home() {
 
   return (
     <Container>
-      <Head>
-        <link rel="shortcut icon" href="/static/favicon.png" />
-        <meta charSet="utf-8" />
-        <meta property="og:image" content="/static/simple.png" key="ogimageurl" />
-        <meta property="og:image:secure_url" content="/static/simple.png" key="ogimagesecureurl" />
-        <meta property="og:image:type" content="image/png" key="ogimagetype" />
-        <meta property="og:image:width" content="1200" key="ogiamgewidth" />
-        <meta property="og:image:height" content="627" key="ogimageheight" />
-        <meta property="og:type" content="website" key="ogtype" />
-        <meta property="og:url" content="danstepanov.com" key="ogurl" />
-        <meta property="og:title" content="Dan Stepanov" key="ogtitle" />
-        <meta property="og:description" content="My crime is curiosity." key="ogdescription" />
-        <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="@danstepanov" key="twhandle" />
-    </Head>
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <h1 className="animate-move-bg bg-gradient-to-r from-indigo-500 via-pink-500 to-indigo-500 bg-400% bg-clip-text md:text-5xl text-4xl font-bold text-transparent">Oh hai, I'm Dan</h1>
         <div className="flex flex-row flex-wrap mt-4">
