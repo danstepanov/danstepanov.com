@@ -31,7 +31,7 @@ export default function TheRoom() {
                     </>
                 ))}
                 <Image
-                    src="/static/kon.png"
+                    src="/kon.png"
                     alt="Kon"
                     width={4032}
                     height={3024} 

@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./pages/**/*.js', './components/**/*.js'],
+  content: ['./src/app/**/*.js'],
   darkMode: 'class',
   theme: {
     backgroundSize: {
