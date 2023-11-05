@@ -3,8 +3,29 @@ import Image from 'next/image'
 import Container from '../components/Container'
 
 export const metadata = {
-  title: 'My Page Title',
-  description: 'A description of the page',
+  title: 'Lucky',
+  description: 'For my uncle, my older brother.',
+  openGraph: {
+    title: 'Lucky',
+    description: 'For my uncle, my older brother.',
+    url: 'https://onlydans.gg/lucky',
+    images: {
+      url: 'https://onlydans.gg/api/lucky',
+      alt: 'Lucky',
+      type: 'image/png',
+      width: '1200',
+      height: '630'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Lucky',
+      description: 'For my uncle, my older brother.',
+      images: {
+        url: 'https://onlydans.gg/api/lucky',
+      }
+    }
+  }
+    
 }
 
 export default function Lucky() {
@@ -17,99 +38,26 @@ export default function Lucky() {
   ];
 
   return (
-    <>
-      {/* <Head>
-        <title>Dan Stepanov</title>
-        <meta
-          name="viewport"
-          content="initial-scale=1.0, width=device-width"
+    <Container>
+      <div className="flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+        <h2 className="text-2xl font-bold leading-7 text-black sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">Lucky</h2>
+        <br></br>
+        <p className="text-black dark:text-white italic">November 2023</p>
+        <br></br>
+        {data.map((paragraph) => (
+          <>
+            <p className="text-black dark:text-white">{paragraph}</p>
+            <br />
+          </>
+        ))}
+        <Image
+          src="/kon.png"
+          alt="Kon"
+          width={4032}
+          height={3024}
+          layout="responsive"
         />
-        <meta
-          property="description"
-          content="For my uncle, my older brother."
-          key={'description'}
-        />
-        <meta
-          property="og:title"
-          content="Lucky"
-          key={'ogtitle'}
-        />
-        <meta
-          property="og:description"
-          content="For my uncle, my older brother."
-          key={'ogdescription'}
-        />
-        <meta
-          property="og:url"
-          content="https://onlydans.gg/lucky"
-          key={'ogurl'}
-        />
-        <meta
-          property="og:image"
-          content="https://onlydans.gg/api/lucky"
-          key={'ogimage'}
-        />
-        <meta
-          property="og:image:alt"
-          content="Lucky"
-          key={'ogimagealt'}
-        />
-        <meta
-          property="og:image:type"
-          content="image/png"
-          key={'ogimagetype'}
-        />
-        <meta
-          property="og:image:width"
-          content="1200"
-          key={'ogimagewidth'}
-        />
-        <meta
-          property="og:image:height"
-          content="630"
-          key={'ogimageheight'}
-        />
-        <meta
-          property="twitter:image"
-          content="https://onlydans.gg/api/lucky"
-          key={'twitterimage'}
-        />
-        <meta
-          property="twitter:card" content="summary_large_image"
-          key={'twittercard'}
-        />
-        <meta
-          property="twitter:title"
-          content="Lucky"
-          key='twittertitle'
-        />
-        <meta
-          property="twitter:description"
-          content="For my uncle, my older brother."
-          key="twitterdescription"
-        />
-      </Head> */}
-      <Container>
-        <div className="flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-          <h2 className="text-2xl font-bold leading-7 text-black sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">Lucky</h2>
-          <br></br>
-          <p className="text-black dark:text-white italic">November 2023</p>
-          <br></br>
-          {data.map((paragraph) => (
-            <>
-              <p className="text-black dark:text-white">{paragraph}</p>
-              <br />
-            </>
-          ))}
-          <Image
-            src="/kon.png"
-            alt="Kon"
-            width={4032}
-            height={3024}
-            layout="responsive"
-          />
-        </div>
-      </Container>
-    </>
+      </div>
+    </Container>
   )
 }
