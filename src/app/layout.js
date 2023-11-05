@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://onlydans.gg/api/og"
+          content="https://onlydans.gg/api/default"
           key={'ogimage'}
         />
         <meta
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="twitter:image"
-          content="https://onlydans.gg/api/og"
+          content="https://onlydans.gg/api/default"
           key={'twitterimage'}
         />
         <meta
