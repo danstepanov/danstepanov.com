@@ -20,6 +20,18 @@ export default function TheRoom() {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta property="og:title" content="The Room" key="ogtitle" />
                 <title>The Room</title>
+                <meta property="og:url" content="https://onlydans.gg/theroom"></meta>
+                <meta property="og:image" content="https://onlydans.gg/api/theroom" />
+                <meta property="og:image:alt" content="The Room" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta
+                    property="twitter:image"
+                    content="https://onlydans.gg/api/room"
+                ></meta>
+                <meta property="twitter:card" content="summary_large_image"></meta>
+                <meta property="twitter:title" content="The Room"></meta>
             </Head>
             <div className="flex-col justify-center items-start max-w-2xl mx-auto mb-16">
                 <h2 className="text-2xl font-bold leading-7 text-black sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">The Room</h2>
