@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import Container from '../components/Container'
 
-export default function TheRoom() {
+export default function Lucky() {
     const data = [
         `For my uncle, my older brother.`,
         `I was born in 1990, 2 weeks after my pregnant and 18 year old mother landed alone in the US, from the collapsing Soviet Union. At the cost of her 20s, my young mother was incredibly busy raising 2 kids while going to school on a full scholarship given to only 2 women. She wasn’t back from classes before my sister and I finished school, so I ended up spending a lot of time with my uncle Kon. My earliest memories of this time are from around 1995, which would put him at about 16 years old, an age when you really start to come into your own, creatively. I like to think that all children are born curious about the world around them. At 5 years old, I sure was.`,
