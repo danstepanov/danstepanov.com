@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
                 />
                 <meta
                     property="twitter:description"
-                    content="My crim is curiosity."
+                    content="My crime is curiosity."
                     key="twitterdescription"
                 />
             </head>
