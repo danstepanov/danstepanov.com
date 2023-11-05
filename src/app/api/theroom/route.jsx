@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 
 export const runtime = "edge";
 
-export async function GET(request) {
+export async function GET() {
     const fontData = await fetch(
         new URL("../../Inter-ExtraBold.ttf", import.meta.url)
     ).then((res) => res.arrayBuffer());
