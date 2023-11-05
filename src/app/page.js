@@ -12,7 +12,7 @@ export default function Home() {
     {
       id: 0,
       title: "Create Expo Stack",
-      description: "The easiest  and quickest way to initialize a typesafe React Native application with Expo.",
+      description: "The most configurable way to create a React Native app with Expo.",
       href: "https://expostack.dev",
       icon: "expo"
     },

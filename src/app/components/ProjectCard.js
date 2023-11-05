@@ -2,8 +2,8 @@ import Label from './Label'
 
 const ProjectCard = ({ title, description, href, icon, isNew }) => {
     return (
-        <a className="mb-4 hover:shadow" href={href} target="_blank" rel="noopener norefrerrer" aria-label={title}>
-            <div className="flex items-center border border-gray-200 rounded p-4 dark:border-gray-800">
+        <a className="mb-4 hover:shadow w-full" href={href} target="_blank" rel="noopener norefrerrer" aria-label={title}>
+            <div className="flex items-center border border-gray-200 rounded p-4 dark:border-gray-800 min-h-[142px] sm:min-h-[102px] md:min-h-[102px] lg:min-h-[120px]">
                 {icon == "marble" && (
                     <div className="h-8 w-8 ml-2 mr-4">
                         <span className="sr-only">Marble Kiosk</span>
@@ -69,12 +69,12 @@ const ProjectCard = ({ title, description, href, icon, isNew }) => {
                         </svg>
                     </div>
                 )}
-                <div>
-                    <div className="flex flex-row">
+                <div className='flex flex-col w-full'>
+                    <div className="flex flex-row w-full">
                         <h4 className="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100">{title}</h4>
                         {isNew && <Label />}
                     </div>
-                    <p className="leading-5 text-gray-700 dark:text-gray-500">{description}</p>
+                    <p className="leading-5 text-gray-700 dark:text-gray-500 ">{description}</p>
                 </div>
             </div>
         </a>
