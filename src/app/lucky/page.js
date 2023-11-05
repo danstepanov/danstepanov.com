@@ -15,21 +15,75 @@ export default function TheRoom() {
     return (
         <Container>
             <Head>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta property="og:title" content="Lucky" key="ogtitle" />
-                <title>Lucky</title>
-                <meta property="og:url" content="https://onlydans.gg/lucky"></meta>
-                <meta property="og:image" content="https://onlydans.gg/api/lucky" />
-                <meta property="og:image:alt" content="Lucky" />
-                <meta property="og:image:type" content="image/png" />
-                <meta property="og:image:width" content="1200" />
-                <meta property="og:image:height" content="630" />
+            <title>Dan Stepanov</title>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+                <meta
+                    property="description"
+                    content="For my uncle, my older brother."
+                    key={'description'}
+                />
+                <meta
+                    property="og:title"
+                    content="Lucky"
+                    key={'ogtitle'}
+                />
+                <meta
+                    property="og:description"
+                    content="For my uncle, my older brother."
+                    key={'ogdescription'}
+                />
+                <meta
+                    property="og:url"
+                    content="https://onlydans.gg/lucky"
+                    key={'ogurl'}
+                />
+                <meta
+                    property="og:image"
+                    content="https://onlydans.gg/api/lucky"
+                    key={'ogimage'}
+                />
+                <meta
+                    property="og:image:alt"
+                    content="Lucky"
+                    key={'ogimagealt'}
+                />
+                <meta
+                    property="og:image:type"
+                    content="image/png"
+                    key={'ogimagetype'}
+                />
+                <meta
+                    property="og:image:width"
+                    content="1200"
+                    key={'ogimagewidth'}
+                />
+                <meta
+                    property="og:image:height"
+                    content="630"
+                    key={'ogimageheight'}
+                />
                 <meta
                     property="twitter:image"
                     content="https://onlydans.gg/api/lucky"
-                ></meta>
-                <meta property="twitter:card" content="summary_large_image"></meta>
-                <meta property="twitter:title" content="Lucky"></meta>
+                    key={'twitterimage'}
+                />
+                <meta
+                    property="twitter:card" content="summary_large_image"
+                    key={'twittercard'}
+                />
+                <meta
+                    property="twitter:title"
+                    content="Lucky"
+                    key='twittertitle'
+                />
+                <meta
+                    property="twitter:description"
+                    content="For my uncle, my older brother."
+                    key="twitterdescription"
+                />
             </Head>
             <div className="flex-col justify-center items-start max-w-2xl mx-auto mb-16">
                 <h2 className="text-2xl font-bold leading-7 text-black sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">Lucky</h2>
