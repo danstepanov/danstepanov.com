@@ -8,13 +8,6 @@ export async function GET(request) {
     const fontData = await fetch(
         new URL("../../Inter-ExtraBold.ttf", import.meta.url)
     ).then((res) => res.arrayBuffer());
-    const { searchParams } = new URL(request.url);
-    console.log(searchParams);
-  // ?title=<title>
-  const hasTitle = searchParams.has('title');
-  const title = hasTitle
-    ? searchParams.get('title')?.slice(0, 100)
-    : 'My default title';
 
   return new ImageResponse(
     (
@@ -30,7 +23,9 @@ export async function GET(request) {
           background: "black",
         }}
       >
-        <p style={{ color: "white"}}>{title}</p>
+        <div tw="flex flex-row font-sans text-7xl text-center text-white w-9/12 flex-wrap justify-center">
+            <p>Lucky</p>
+        </div>
       </div>
     ),
     {
