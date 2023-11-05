@@ -4,11 +4,11 @@ import { ImageResponse } from 'next/og'
 
 export const runtime = "edge";
 
-export async function GET({ params }) {
+export async function GET(request) {
     const fontData = await fetch(
         new URL("../../Inter-ExtraBold.ttf", import.meta.url)
     ).then((res) => res.arrayBuffer());
-  
+    const { searchParams } = new URL(request.url);
   // ?title=<title>
   const hasTitle = searchParams.has('title');
   const title = hasTitle
