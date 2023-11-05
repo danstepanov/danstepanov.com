@@ -4,9 +4,9 @@ import { ImageResponse } from 'next/og'
 
 export const runtime = "edge";
 
-export async function GET() {
+export async function GET({ params }) {
     const fontData = await fetch(
-        new URL("../../Inter-ExtraBold.ttf", __dirname)
+        new URL("../../Inter-ExtraBold.ttf", import.meta.url)
     ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
@@ -23,7 +23,7 @@ export async function GET() {
           background: "black",
         }}
       >
-        Keep it simple.
+        <p style={{ color: "white"}}>Keep it simple. {params.slug}</p>
       </div>
     ),
     {
