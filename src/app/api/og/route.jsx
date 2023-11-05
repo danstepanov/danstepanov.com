@@ -9,6 +9,7 @@ export async function GET(request) {
         new URL("../../Inter-ExtraBold.ttf", import.meta.url)
     ).then((res) => res.arrayBuffer());
     const { searchParams } = new URL(request.url);
+    console.log(searchParams);
   // ?title=<title>
   const hasTitle = searchParams.has('title');
   const title = hasTitle

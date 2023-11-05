@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
             <head>
-                <title>Create Expo Stack</title>
+                <title>Dan Stepanov</title>
                 <meta
                     property="description"
                     content="My crime is curiosity."
