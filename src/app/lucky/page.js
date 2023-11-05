@@ -13,9 +13,9 @@ export default function TheRoom() {
     ];
 
     return (
-        <Container>
+        <>
             <Head>
-            <title>Dan Stepanov</title>
+                <title>Dan Stepanov</title>
                 <meta
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
@@ -85,25 +85,27 @@ export default function TheRoom() {
                     key="twitterdescription"
                 />
             </Head>
-            <div className="flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-                <h2 className="text-2xl font-bold leading-7 text-black sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">Lucky</h2>
-                <br></br>
-                <p className="text-black dark:text-white italic">November 2023</p>
-                <br></br>
-                {data.map((paragraph) => (
-                    <>
-                        <p className="text-black dark:text-white">{paragraph}</p>
-                        <br />
-                    </>
-                ))}
-                <Image
-                    src="/kon.png"
-                    alt="Kon"
-                    width={4032}
-                    height={3024} 
-                    layout="responsive"
-                />
-            </div>
-        </Container>
+            <Container>
+                <div className="flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+                    <h2 className="text-2xl font-bold leading-7 text-black sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">Lucky</h2>
+                    <br></br>
+                    <p className="text-black dark:text-white italic">November 2023</p>
+                    <br></br>
+                    {data.map((paragraph) => (
+                        <>
+                            <p className="text-black dark:text-white">{paragraph}</p>
+                            <br />
+                        </>
+                    ))}
+                    <Image
+                        src="/kon.png"
+                        alt="Kon"
+                        width={4032}
+                        height={3024}
+                        layout="responsive"
+                    />
+                </div>
+            </Container>
+        </>
     )
 }
