@@ -63,6 +63,11 @@
   dependencies:
     glob "7.1.7"
 
+"@next/font@^14.0.1":
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-14.0.1.tgz#f0ef9bce681ed3d66e05f20dad770c56b6ded790"
+  integrity sha512-Kbhhjn7Fj/YoZcRtUb6RuLm/2JffH76fbLiFnV4EGkq6wRUAVA5bwbpI1D9KgmvSyaC2taWnmIuMFpTWl9Q92Q==
+
 "@next/swc-darwin-arm64@14.0.1":
   version "14.0.1"
   resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.0.1.tgz#75a5f872c4077ecd536d7496bc24f3d312d5dcd0"
