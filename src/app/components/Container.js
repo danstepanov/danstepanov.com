@@ -22,7 +22,7 @@ export default function Container({ children }) {
 
 	return (
 		<div className="flex flex-1 flex-col bg-white dark:bg-black">
-			<nav className={`flex sticky-nav ${pathname === '/' ? "justify-end" : "justify-between"} items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto`}>
+			<nav className={`flex ${pathname === '/' ? "justify-end" : "justify-between"} items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto`}>
 				{pathname !== '/' && (
 					<button aria-label="Toggle Dark Mode" type="button" className="bg-gray-200 dark:bg-gray-800 rounded p-2 h-10 w-10 items-center justify-center" onClick={() => router.push('/')}>
 						{mounted && (
