@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
+import { usePathname, useRouter } from 'next/navigation'
+import { ChevronLeftIcon } from '@heroicons/react/20/solid'
 
 import Footer from "./Footer";
 
@@ -8,16 +10,27 @@ export default function Container({ children }) {
 	const [mounted, setMounted] = useState(false)
 	const { theme, setTheme } = useTheme()
 
+
 	useEffect(() => setMounted(true), [])
 
 	if (!mounted) {
 		return null
 	}
 
+	const pathname = usePathname();
+	const router = useRouter();
+
 	return (
 		<div className="flex flex-1 flex-col bg-white dark:bg-black">
-			<nav className="flex sticky-nav justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto bg-opacity-60">
-				<button aria-label="Toggle Dark Mode" type="button" className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+			<nav className={`flex sticky-nav ${pathname === '/' ? "justify-end" : "justify-between"} items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto`}>
+				{pathname !== '/' && (
+					<button aria-label="Toggle Dark Mode" type="button" className="bg-gray-200 dark:bg-gray-800 rounded p-2 h-10 w-10 items-center justify-center" onClick={() => router.push('/')}>
+						{mounted && (
+							<ChevronLeftIcon className="h-5 w-5 text-gray-500 dark:text-white" aria-hidden="true" />
+						)}
+					</button>
+				)}
+				<button aria-label="Toggle Dark Mode" type="button" className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10 self-end" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
 					{mounted && (
 						<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" className="h-4 w-4 text-gray-800 dark:text-white">
 							{theme === 'dark' ? (

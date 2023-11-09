@@ -6,7 +6,7 @@ const Divider = () => (
 )
 
 const Year = ({ children }) => (
-	<h3 className="text-lg md:text-lg font-bold mb-4 tracking-tight text-gray-900 dark:text-gray-100">
+	<h3 className="text-lg md:text-lg font-bold mb-4 tracking-tight text-[#0089D0]">
 		{children}
 	</h3>
 )
@@ -23,7 +23,7 @@ const Step = ({ title, children }) => (
 			</svg>
 			<p className="font-medium text-gray-900 dark:text-gray-100">{title}</p>
 		</div>
-		<p className="text-gray-700 ml-6 dark:text-gray-400">{children}</p>
+		<p className="ml-6 text-gray-500 dark:text-gray-400">{children}</p>
 	</li>
 )
 
@@ -131,7 +131,7 @@ const Timeline = () => {
 
 	return (
 		<>
-			<h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-gray-500 dark:text-white">Timeline</h3>
+			<h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">Timeline</h3>
 			<Year>2022</Year>
 			<ul>
 				<Step title="Started working on Expo">

@@ -56,6 +56,10 @@ export default function Lucky() {
 					height={3024}
 					layout="responsive"
 				/>
+				<br />
+				<div className='flex flex-row justify-center'>
+					<p className="text-black dark:text-white italic">{"Kon, ~1997."}</p>
+				</div>
 			</div>
 		</Container>
 	)

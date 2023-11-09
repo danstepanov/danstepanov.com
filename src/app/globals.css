@@ -3,32 +3,34 @@
 @tailwind utilities;
 
 html {
-    min-width: 360px;
-    overflow: auto;
-    scroll-behavior: smooth;
+	min-width: 360px;
+	overflow: auto;
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    background: transparent;
-    display: none;
-    width: 0px;
+	background: transparent;
+	display: none;
+	width: 0px;
 }
 
 * {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
+}
 
 #__next {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 .sticky-nav {
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    backdrop-filter: saturate(180%) blur(20px);
-    transition: background-color 0.1 ease-in-out;
+	position: sticky;
+	z-index: 10;
+	top: 0;
+	/* backdrop-filter: saturate(180%) blur(20px); */
+	/* transition: background-color 0.1 ease-in-out; */
 }
