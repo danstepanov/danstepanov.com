@@ -1,6 +1,6 @@
 import Label from './Label'
 
-const ProjectCard = ({ title, description, href, icon, isNew }) => {
+const ProjectCard = ({ title, description, href, icon, labelTitle = undefined }) => {
 	return (
 		<a className="mb-4 hover:shadow w-full" href={href} target="_blank" rel="noopener norefrerrer" aria-label={title}>
 			<div className="flex items-center border border-gray-200 rounded p-4 dark:border-gray-800 min-h-[142px] sm:min-h-[102px] md:min-h-[102px] lg:min-h-[120px]">
@@ -72,7 +72,7 @@ const ProjectCard = ({ title, description, href, icon, isNew }) => {
 				<div className='flex flex-col w-full'>
 					<div className="flex flex-row w-full">
 						<h4 className="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100">{title}</h4>
-						{isNew && <Label />}
+						{labelTitle && <Label title={labelTitle} />}
 					</div>
 					<p className="leading-5 text-gray-500 dark:text-gray-400">{description}</p>
 				</div>
