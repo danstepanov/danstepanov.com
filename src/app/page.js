@@ -32,7 +32,8 @@ const CurrentProjectsSection = () => {
 			description: "Ship apps fast af with Expo and Next.js.",
 			href: "https://thenextth.ing",
 			icon: "expo",
-			type: "devtools"
+			type: "devtools",
+			labelTitle: "Creator"
 		},
 		{
 			id: 1,
@@ -120,6 +121,7 @@ const CurrentProjectsSection = () => {
 							description={project.description}
 							href={project.href}
 							icon={project.icon}
+							labelTitle={project.labelTitle}
 						/>
 					)
 				} else {
