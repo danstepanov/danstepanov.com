@@ -28,13 +28,6 @@ export const metadata = {
 	}
 }
 
-import { Libre_Baskerville } from '@next/font/google'
-
-const baskerville = Libre_Baskerville({
-	subsets: ['latin-ext'],
-	weight: "400",
-});
-
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
@@ -43,7 +36,7 @@ export default function RootLayout({ children }) {
 			</head>
 			<body className="bg-white dark:bg-black text-white dark:text-gray-500">
 				<Providers>
-					<main className={baskerville.className}>
+					<main>
 						{children}
 					</main>
 				</Providers>

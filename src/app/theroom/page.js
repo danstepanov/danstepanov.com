@@ -1,4 +1,11 @@
+import { Libre_Baskerville } from '@next/font/google'
+
 import Container from '../components/Container'
+
+const baskerville = Libre_Baskerville({
+	subsets: ['latin-ext'],
+	weight: "400",
+});
 
 export const metadata = {
 	title: 'The Room',
@@ -39,7 +46,7 @@ export default function TheRoom() {
 
 	return (
 		<Container>
-			<div className="flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+			<div className={`${baskerville.className} flex-col justify-center items-start max-w-2xl mx-auto mb-16`}>
 				<h2 className="text-2xl font-bold leading-7 text-[#0089D0] sm:truncate sm:text-3xl sm:tracking-tight">The Room</h2>
 				<br></br>
 				<p className="text-gray-500 dark:text-white italic">June 2023</p>

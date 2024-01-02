@@ -5,7 +5,6 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import Container from "./components/Container"
 import ProjectCard from "./components/ProjectCard"
 import Timeline from "./components/Timeline"
-import Label from 'src/app/components/Label'
 
 export default function Home() {
 	const [projects] = useState([
