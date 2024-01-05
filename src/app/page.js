@@ -31,7 +31,7 @@ const CurrentProjectsSection = () => {
 			title: "The Next Thing",
 			description: "Ship apps fast af with Expo and Next.js.",
 			href: "https://thenextth.ing",
-			icon: "expo",
+			icon: "nextthing",
 			type: "devtools",
 			labelTitle: "Creator"
 		},
@@ -40,7 +40,7 @@ const CurrentProjectsSection = () => {
 			title: "Create Expo Stack",
 			description: "The most configurable way to create a React Native app with Expo.",
 			href: "https://createexpostack.com",
-			icon: "expo",
+			icon: "ces",
 			type: "oss",
 			labelTitle: "Creator"
 		},
@@ -55,12 +55,11 @@ const CurrentProjectsSection = () => {
 		},
 		{
 			id: 3,
-			title: "Snack for That",
-			description: "A collection of Expo Snacks from various developers that explore useful and compelling functionality.",
-			href: "https://snackforthat.com/",
-			icon: "expo",
-			type: "oss",
-			labelTitle: "Creator"
+			title: "Ambrook",
+			description: "Accounting software that helps you run a better farm",
+			href: "https://ambrook.com/",
+			icon: "ambrook",
+			type: "client"
 		},
 		{
 			id: 4,
@@ -114,6 +113,27 @@ const CurrentProjectsSection = () => {
 			</p>
 			{currentProjects.map(project => {
 				if (project.type === "devtools") {
+					return (
+						<ProjectCard
+							key={project.id}
+							title={project.title}
+							description={project.description}
+							href={project.href}
+							icon={project.icon}
+							labelTitle={project.labelTitle}
+						/>
+					)
+				} else {
+					return null;
+				}
+			})}
+			<h3 className="font-bold text-xl mt-5 mb-1 ml-[2px] text-gray-400">Client Work</h3>
+			<p className="text-base mb-3 ml-[2px] text-black dark:text-white">
+				I'm always looking for new opportunities to make impactful contributions to developer and user experiences. If you're interested in working together,{' '}
+				<a className="text-[#0089D0]" href="mailto:dan@danstepanov.com">shoot me a message</a>.
+			</p>
+			{currentProjects.map(project => {
+				if (project.type === "client") {
 					return (
 						<ProjectCard
 							key={project.id}
