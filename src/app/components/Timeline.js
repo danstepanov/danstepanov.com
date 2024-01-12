@@ -131,7 +131,7 @@ const Timeline = () => {
 
 	return (
 		<>
-			<h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">Timeline</h3>
+			<h3 className="font-bold text-xl mt-5 mb-4 ml-[2px] text-gray-400">Timeline</h3>
 			<Year>2022</Year>
 			<ul>
 				<Step title="Started working on Expo">

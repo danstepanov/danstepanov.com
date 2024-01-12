@@ -24,9 +24,12 @@ export default function Container({ children }) {
 		<div className="flex flex-1 flex-col bg-white dark:bg-black">
 			<nav className={`flex ${pathname === '/' ? "justify-end" : "justify-between"} items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto`}>
 				{pathname !== '/' && (
-					<button aria-label="Toggle Dark Mode" type="button" className="bg-gray-200 dark:bg-gray-800 rounded p-2 h-10 w-10 items-center justify-center" onClick={() => router.push('/')}>
+					<button aria-label="Toggle Dark Mode" type="button" className="flex flex-row rounded p-2 items-center justify-center" onClick={() => router.push('/')}>
 						{mounted && (
-							<ChevronLeftIcon className="h-5 w-5 text-gray-500 dark:text-white" aria-hidden="true" />
+							<div className='flex flex-row justify-center items-center'>
+								<ChevronLeftIcon className="h-5 w-5 text-black dark:text-white" aria-hidden="true" />
+								<p className="text-black dark:text-white ml-1 text-base mb-[2px]">okay that's enough</p>
+							</div>
 						)}
 					</button>
 				)}
