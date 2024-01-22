@@ -59,13 +59,13 @@ export default function Lucky() {
 				<Image
 					src="/kon.png"
 					alt="Kon"
-					width={4032}
-					height={3024}
+					width={866}
+					height={596}
 					layout="responsive"
 				/>
 				<br />
 				<div className='flex flex-row justify-center'>
-					<p className="text-black dark:text-white italic">{"Kon, ~1997."}</p>
+					<p className="text-black dark:text-white italic">{"Kon, ~1995."}</p>
 				</div>
 			</div>
 		</Container>

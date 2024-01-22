@@ -10,7 +10,6 @@ export default function Container({ children }) {
 	const [mounted, setMounted] = useState(false)
 	const { theme, setTheme, resolvedTheme } = useTheme()
 
-
 	useEffect(() => setMounted(true), [])
 
 	if (!mounted) {

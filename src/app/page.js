@@ -148,11 +148,13 @@ const sections = [
 const essays = [
 	{
 		title: "Lucky",
-		description: "I was born in 1990, 2 weeks after my pregnant and 18 year old mother landed alone in the US, from the collapsing Soviet Union. At the cost of her 20s, my young mother was incredibly busy raising 2 kids"
+		description: "I was born in 1990, 2 weeks after my pregnant and 18 year old mother landed alone in the US, from the collapsing Soviet Union. At the cost of her 20s, my young mother was incredibly busy raising 2 kids",
+		href: "/lucky"
 	},
 	{
 		title: "The Room",
-		description: "In the realm of startups and ambitious endeavors, there exists a concept known as \"The Room.\" It is an elusive group of exceptionally talented  individuals working on something of profound significance"
+		description: "In the realm of startups and ambitious endeavors, there exists a concept known as \"The Room.\" It is an elusive group of exceptionally talented  individuals working on something of profound significance",
+		href: "/room"
 	}
 ];
 
@@ -177,7 +179,7 @@ const Home = () => (
 			{/* Essays Section */}
 			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Get to know me even better</h2>
 			<h3 className="font-bold text-xl mt-5 mb-4 ml-[2px] text-gray-400">Blog</h3>
-			{essays.map(essay => <Essay title={essay.title} description={essay.description} />)}
+			{essays.map(essay => <Essay title={essay.title} description={essay.description} href={essay.href} />)}
 			{/* <Timeline /> */}
 			<h3 className="font-bold text-xl mt-5 ml-[2px] text-gray-400">Timeline</h3>
 			<p className="text-base mb-3 mt-1 ml-[2px] text-black dark:text-white">

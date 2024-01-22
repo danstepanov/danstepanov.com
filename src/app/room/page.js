@@ -13,9 +13,9 @@ export const metadata = {
 	openGraph: {
 		title: 'The Room',
 		description: 'An elusive environment.',
-		url: 'https://onlydans.gg/theroom',
+		url: 'https://onlydans.gg/room',
 		images: {
-			url: 'https://onlydans.gg/api/theroom',
+			url: 'https://onlydans.gg/api/room',
 			alt: 'The Room',
 			type: 'image/png',
 			width: '1200',
@@ -26,7 +26,7 @@ export const metadata = {
 			title: 'The Room',
 			description: 'An elusive environment.',
 			images: {
-				url: 'https://onlydans.gg/api/theroom',
+				url: 'https://onlydans.gg/api/room',
 			}
 		}
 	}

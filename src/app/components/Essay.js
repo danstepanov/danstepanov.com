@@ -1,8 +1,8 @@
 
 import { ChevronRightIcon } from '@heroicons/react/20/solid';
 
-const Essay = ({ title, description }) => (
-	<a href="/lucky" className="flex flex-row min-w-0 py-4 px-6 border-gray-200 hover:shadow border rounded dark:border-gray-800 w-full justify-between mb-4">
+const Essay = ({ title, description, href }) => (
+	<a href={href} className="flex flex-row min-w-0 py-4 px-6 border-gray-200 hover:shadow border rounded dark:border-gray-800 w-full justify-between mb-4">
 		<div className="flex flex-col">
 			<div className="flex items-center">
 				<p className="text-lg font-bold leading-6 text-[#0089D0] dark:text-white">{title}</p>
