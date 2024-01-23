@@ -13,6 +13,11 @@ module.exports = {
                 source: '/connect',
                 destination: 'https://calendly.com/fullcalendar',
                 permanent: true
+            },
+            {
+                source: '/discord',
+                destination: 'https://discord.gg/XS9qS2mvTR',
+                permanent: true
             }
         ]
     }
