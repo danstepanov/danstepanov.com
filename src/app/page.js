@@ -4,7 +4,6 @@ import React from 'react'
 import Container from "./components/Container"
 import Essay from "./components/Essay"
 import ProjectSection from './components/ProjectSection';
-import Timeline from "./components/Timeline"
 
 const sections = [
 	{
@@ -15,21 +14,22 @@ const sections = [
 			hrefText: undefined
 		},
 		projects: [
-			// {
-			// 	id: 0,
-			// 	title: "NativeWindUI",
-			// 	description: "Coming soon...",
-			// 	href: "https://nativewindui.com",
-			// 	icon: "nativewind",
-			// 	oss: false
-			// },
 			{
 				id: 0,
-				title: "The Next Thing",
-				description: "Ship apps fast af with Expo and Next.js.",
-				href: "https://thenextth.ing",
-				icon: "nextthing",
-				labelTitle: "Creator"
+				title: "NativeWindUI",
+				description: "Carefully crafted components that strive for a native look & feel.",
+				href: "https://nativewindui.com",
+				icon: "nativewindui",
+				labelTitle: "Author",
+				oss: false
+			},
+			{
+				id: 1,
+				title: "ShipRN",
+				description: "Ship apps fast af with Expo Router",
+				href: "https://shiprn.dev",
+				icon: "shiprn",
+				labelTitle: "Author"
 			},
 		]
 	},
@@ -44,7 +44,7 @@ const sections = [
 		},
 		projects: [
 			{
-				id: 0,
+				id: 2,
 				title: "Ambrook",
 				description: "Accounting software that helps you run a better farm",
 				href: "https://ambrook.com/",
@@ -64,20 +64,20 @@ const sections = [
 		},
 		projects: [
 			{
-				id: 1,
+				id: 3,
 				title: "Create Expo Stack",
 				description: "The most configurable way to create a React Native app with Expo.",
 				href: "https://createexpostack.com",
 				icon: "ces",
-				labelTitle: "Creator"
+				labelTitle: "Author"
 			},
 			{
-				id: 2,
+				id: 4,
 				title: "Snackify",
 				description: "Turn any local Expo project into a sharable url via Expo Snack.",
 				href: "https://github.com/danstepanov/expo-snackify",
 				icon: "expo",
-				labelTitle: "Creator"
+				labelTitle: "Author"
 			}
 		],
 	},
@@ -93,14 +93,14 @@ const sections = [
 		},
 		projects: [
 			{
-				id: 4,
+				id: 5,
 				title: "Expo (YC S16)",
 				description: "Make any app. Run it everywhere. Build one project that runs natively on all your users' devices.",
 				href: "https://www.expo.dev/",
 				icon: "expo",
 			},
 			{
-				id: 5,
+				id: 6,
 				title: "Topline Pro (YC W21)",
 				description: "Topline Pro makes it easier to grow your business and spend more time in the field, rather than the office.",
 				href: "https://www.toplinepro.com/",
@@ -108,7 +108,7 @@ const sections = [
 				labelTitle: "Founder"
 			},
 			{
-				id: 6,
+				id: 7,
 				title: "Marble (YC S19)",
 				description: "Cashier-free checkout at restaurants via elegant kiosks that allow thematic customization.",
 				href: "https://apps.apple.com/us/app/marble-kiosk/id1495734829",
@@ -127,14 +127,14 @@ const sections = [
 		},
 		projects: [
 			{
-				id: 7,
+				id: 8,
 				title: "Sondors EV",
 				description: "An electric self- and remote-driving vehicle that is aimed at being affordable for the average person.",
 				href: "https://www.sondors.com/",
 				icon: "sondors",
 			},
 			{
-				id: 8,
+				id: 9,
 				title: "Slice Capital",
 				description: "SEC and FINRA-approved funding platform providing startup investment to the masses.",
 				href: null,
