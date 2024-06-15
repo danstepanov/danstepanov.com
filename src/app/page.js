@@ -26,7 +26,7 @@ const sections = [
 			{
 				id: 1,
 				title: "ShipRN",
-				description: "Ship apps fast af with Expo Router",
+				description: "Ship apps fast af with Expo Router.",
 				href: "https://shiprn.dev",
 				icon: "shiprn",
 				labelTitle: "Author"
@@ -45,8 +45,15 @@ const sections = [
 		projects: [
 			{
 				id: 2,
+				title: "Sole Retriever",
+				description: "All things sneakers, all in one place.",
+				href: "https://soleretriever.com/",
+				icon: "sole-retriever",
+			},
+			{
+				id: 3,
 				title: "Ambrook",
-				description: "Accounting software that helps you run a better farm",
+				description: "Accounting software that helps you run a better farm.",
 				href: "https://ambrook.com/",
 				icon: "ambrook",
 			},
@@ -64,19 +71,19 @@ const sections = [
 		},
 		projects: [
 			{
-				id: 3,
-				title: "Create Expo Stack",
-				description: "The most configurable way to create a React Native app with Expo.",
-				href: "https://createexpostack.com",
-				icon: "ces",
-				labelTitle: "Author"
+				id: 4,
+				title: "NativeWind",
+				description: "Tailwind CSS for React Native.",
+				href: "https://nativewind.dev",
+				icon: "nativewind",
+				labelTitle: "Maintainer"
 			},
 			{
-				id: 4,
-				title: "Snackify",
-				description: "Turn any local Expo project into a sharable url via Expo Snack.",
-				href: "https://github.com/danstepanov/expo-snackify",
-				icon: "expo",
+				id: 5,
+				title: "Create Expo Stack",
+				description: "The most configurable way to create a React Native app with Expo.",
+				href: "https://rn.new",
+				icon: "ces",
 				labelTitle: "Author"
 			}
 		],
@@ -93,14 +100,14 @@ const sections = [
 		},
 		projects: [
 			{
-				id: 5,
+				id: 7,
 				title: "Expo (YC S16)",
 				description: "Make any app. Run it everywhere. Build one project that runs natively on all your users' devices.",
 				href: "https://www.expo.dev/",
 				icon: "expo",
 			},
 			{
-				id: 6,
+				id: 8,
 				title: "Topline Pro (YC W21)",
 				description: "Topline Pro makes it easier to grow your business and spend more time in the field, rather than the office.",
 				href: "https://www.toplinepro.com/",
@@ -108,7 +115,7 @@ const sections = [
 				labelTitle: "Founder"
 			},
 			{
-				id: 7,
+				id: 9,
 				title: "Marble (YC S19)",
 				description: "Cashier-free checkout at restaurants via elegant kiosks that allow thematic customization.",
 				href: "https://apps.apple.com/us/app/marble-kiosk/id1495734829",
@@ -127,14 +134,14 @@ const sections = [
 		},
 		projects: [
 			{
-				id: 8,
+				id: 10,
 				title: "Sondors EV",
 				description: "An electric self- and remote-driving vehicle that is aimed at being affordable for the average person.",
-				href: "https://www.sondors.com/",
+				href: null,
 				icon: "sondors",
 			},
 			{
-				id: 9,
+				id: 11,
 				title: "Slice Capital",
 				description: "SEC and FINRA-approved funding platform providing startup investment to the masses.",
 				href: null,
