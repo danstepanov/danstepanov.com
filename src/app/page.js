@@ -25,11 +25,11 @@ const sections = [
 			},
 			{
 				id: 1,
-				title: "ShipRN",
-				description: "Ship apps fast af with Expo Router.",
-				href: "https://shiprn.dev",
-				icon: "shiprn",
-				labelTitle: "Author"
+				title: "NativeWind",
+				description: "Tailwind CSS for React Native.",
+				href: "https://nativewind.dev",
+				icon: "nativewind",
+				labelTitle: "Maintainer"
 			},
 		]
 	},
