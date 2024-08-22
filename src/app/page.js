@@ -4,6 +4,7 @@ import React from 'react'
 import Container from "./components/Container"
 import Essay from "./components/Essay"
 import ProjectSection from './components/ProjectSection';
+import SpeakingSection from './components/SpeakingSection';
 
 const sections = [
 	{
@@ -28,7 +29,7 @@ const sections = [
 				title: "NativeWind",
 				description: "Tailwind CSS for React Native.",
 				href: "https://nativewind.dev",
-				icon: "nativewind",
+				icon: "react-native",
 				labelTitle: "Maintainer"
 			},
 		]
@@ -169,7 +170,11 @@ const Header = () => (
 	<>
 		<h1 className="animate-move-bg bg-gradient-to-r from-indigo-500 via-pink-500 to-indigo-500 bg-400% bg-clip-text md:text-5xl text-4xl font-bold text-transparent">Oh hai, I'm Dan</h1>
 		<div className="flex flex-row flex-wrap mt-4">
-			<div className="text-gray-500 dark:text-white text-lg">I’ve been building apps for over 10 years. I primarily focus on empowering people through technology via incredible user and developer experiences. I’ve built products in fintech, political tech, and, more recently, developer tooling. I’ve founded and worked at numerous YC companies. Over the last 8 years, I’ve been building with and contributing to <a href="https://expo.dev" className="text-[#0089D0]">Expo</a> and <a href="https://reactnative.dev" className="text-[#0089D0]">React Native</a>.&nbsp;</div>
+			<div className="text-gray-500 dark:text-white text-lg">
+				I’ve been building apps for over 10 years. I primarily focus on empowering people through technology and I care a lot about crafting incredible user and developer experiences. While I’ve built products in fintech, political tech, I prefer to focus on developer tooling. I’ve founded and worked at numerous YC companies.
+			</div>
+			<div className="text-gray-500 dark:text-white text-lg mt-4">
+				Over the last 8 years, I’ve been building with and contributing to <a href="https://expo.dev" className="text-[#0089D0]">Expo</a> and <a href="https://reactnative.dev" className="text-[#0089D0]">React Native</a>.&nbsp; Over the last 2 years, I’ve been focused on making the process of building with these technologies simpler and more powerful.</div>
 		</div>
 	</>
 );
@@ -178,13 +183,17 @@ const Home = () => (
 	<Container>
 		<div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
 			<Header />
-			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Recent work</h2>
+			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Speaking events</h2>
+
+			<SpeakingSection />
+
+			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Current projects</h2>
 
 			{/* Projects Section */}
 			{sections.map(section => <ProjectSection title={section.title} description={section.description} projects={section.projects} />)}
 
 			{/* Essays Section */}
-			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Get to know me even better</h2>
+			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Get to know me</h2>
 			<h3 className="font-bold text-xl mt-5 mb-4 ml-[2px] text-gray-400">Blog</h3>
 			{essays.map(essay => <Essay title={essay.title} description={essay.description} href={essay.href} />)}
 			{/* <Timeline /> */}
