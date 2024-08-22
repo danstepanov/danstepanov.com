@@ -8,7 +8,9 @@ import SpeakingSection from './components/SpeakingSection';
 
 const sections = [
 	{
-		title: "Developer Tools",
+		title: {
+			text: "Current Projects",
+		},
 		description: {
 			text: "At the moment, I'm focused on helping developers build better and faster",
 			href: undefined,
@@ -187,7 +189,7 @@ const Home = () => (
 
 			<SpeakingSection />
 
-			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Current projects</h2>
+			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Recent work</h2>
 
 			{/* Projects Section */}
 			{sections.map(section => <ProjectSection title={section.title} description={section.description} projects={section.projects} />)}

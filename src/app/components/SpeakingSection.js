@@ -2,7 +2,7 @@ import React from 'react';
 
 import ProjectCard from './ProjectCard';
 
-const SpeakingEvent = ({ id, title, description, href, icon }) => (
+const SpeakingEvent = ({ id, title, description, href, icon, labelTitle }) => (
 <div className="mb-4">
 <ProjectCard
 key={id}
@@ -10,7 +10,7 @@ title={title}
 description={description}
 href={href}
 icon={icon}
-labelTitle={title}
+labelTitle={labelTitle}
 />
 </div>
 );
