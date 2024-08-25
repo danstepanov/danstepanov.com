@@ -121,7 +121,7 @@ const sections = [
 				id: 9,
 				title: "Marble (YC S19)",
 				description: "Cashier-free checkout at restaurants via elegant kiosks that allow thematic customization.",
-				href: "https://apps.apple.com/us/app/marble-kiosk/id1495734829",
+				href: null,
 				icon: "marble",
 			},
 		],
@@ -185,14 +185,15 @@ const Home = () => (
 	<Container>
 		<div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
 			<Header />
-			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Speaking events</h2>
-
-			<SpeakingSection />
 
 			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Recent work</h2>
 
 			{/* Projects Section */}
 			{sections.map(section => <ProjectSection title={section.title} description={section.description} projects={section.projects} />)}
+
+			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Speaking events</h2>
+
+			<SpeakingSection />
 
 			{/* Essays Section */}
 			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Get to know me</h2>
