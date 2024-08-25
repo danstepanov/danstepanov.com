@@ -188,6 +188,8 @@ const Home = () => (
 			
 			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-6 text-black dark:text-white">
 				I'm currently taking on new clients and projects.{' '}
+				{/* if mobile, render new line */}
+				<br className="md:hidden" />
 				<a className="text-[#0089D0]" href={'mailto: dan@danstepanov.com'} target="_blank" rel="noopener noreferrer">Get in touch</a>
 			</h2>
 
