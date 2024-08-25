@@ -20,7 +20,7 @@ const sections = [
 			{
 				id: 0,
 				title: "NativeWindUI",
-				description: "Carefully crafted components that strive for a native look & feel.",
+				description: "Carefully crafted components & templates that strive for a native look & feel.",
 				href: "https://nativewindui.com",
 				icon: "nativewindui",
 				labelTitle: "Author",
@@ -185,6 +185,11 @@ const Home = () => (
 	<Container>
 		<div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
 			<Header />
+			
+			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-6 text-black dark:text-white">
+				I'm currently taking on new clients and projects.{' '}
+				<a className="text-[#0089D0]" href={'mailto: dan@danstepanov.com'} target="_blank" rel="noopener noreferrer">Get in touch</a>
+			</h2>
 
 			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-12 text-black dark:text-white">Recent work</h2>
 
