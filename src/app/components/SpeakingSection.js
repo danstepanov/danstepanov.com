@@ -30,6 +30,13 @@ const SpeakingSection = () => {
       	description: "I chat building developer tooling with Mazen, from the Infinite Red team.",
       	href: "https://www.youtube.com/watch?v=zJ584RPF3EE",
 		icon: 'react-native',
+    },
+	{
+		id: 2,
+      	title: "Rocket Ship",
+      	description: "Simon and I chat Create Expo Stack and the state of React Native.",
+      	href: "https://www.youtube.com/watch?v=WT7vlrIsYHs",
+		icon: 'react-native',
     }
   ];
 

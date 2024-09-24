@@ -186,7 +186,7 @@ const Home = () => (
 		<div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
 			<Header />
 			
-			<h2 className="font-bold text-2xl md:text-4xl tracking-tight mt-6 text-black dark:text-white">
+			<h2 className="font-bold text-2xl tracking-tight mt-6 text-black dark:text-white">
 				I'm currently taking on new clients and projects.{' '}
 				{/* if mobile, render new line */}
 				<br className="md:hidden" />
