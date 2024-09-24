@@ -50,6 +50,15 @@ const ProjectCard = ({ title, description, href, icon, labelTitle = undefined })
 					</div>
 				)}
 
+				{icon === "rocket-ship" && (
+					<div className="h-8 w-8 ml-2 mr-4">
+						<span className="sr-only">Rocket Ship</span>
+						<svg className="h-8 w-8 min-w-lg text-gray-900 dark:text-gray-100" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.13 22.19l-1.63-3.83c1.57-.58 3.04-1.36 4.4-2.27l-2.77 6.1zM5.64 12.5l-3.83-1.63 6.1-2.77C7 9.46 6.22 10.93 5.64 12.5zM21.61 2.39C21.61 2.39 16.66.269 11 5.93c-2.19 2.19-3.5 4.6-4.35 6.71-.28.75-.09 1.57.46 2.13l2.13 2.13c.55.55 1.37.74 2.13.46 2.11-.85 4.52-2.16 6.71-4.35C23.73 7.34 21.61 2.39 21.61 2.39z" />
+						</svg>
+					</div>
+				)}
+
 				{icon == "slice" && (
 					<div className="h-8 w-8 ml-2 mr-4">
 						<span className="sr-only">Slice</span>
