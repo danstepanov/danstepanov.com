@@ -85,7 +85,7 @@ const sections = [
 				id: 5,
 				title: "Create Expo Stack",
 				description: "The most configurable way to create a React Native app with Expo.",
-				href: "https://createexpostack.com",
+				href: "https://rn.new",
 				icon: "ces",
 				labelTitle: "Author"
 			}
